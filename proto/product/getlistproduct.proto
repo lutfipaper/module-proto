@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package product;
+
+// always use absolute path
+option go_package = "github.com/lutfipaper/module-proto/go/product;product";
+
+message GetListProductResponse { repeated Product ListProduct = 1; }
+
+message Product {
+  string UUID = 1;
+  string Name = 2;
+  string Description = 3;
+  float Price = 4;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package product;
+
+// always use absolute path
+option go_package = "github.com/lutfipaper/module-proto/go/product;product";
+import "google/protobuf/empty.proto";
+import "paper-module-proto/proto/product/getlistproduct.proto";
+
+service Services {
+  rpc GetListProduct(google.protobuf.Empty) returns (GetListProductResponse);
+  // rpc DelARSData(DelARSDataRequest) returns (google.protobuf.Empty);
+  // rpc GetLoantypeARS(google.protobuf.Empty) returns (GetLoantypeARSResponse);
+  // rpc SaveLoantypeARS(SaveLoantypeARSRequest) returns
+  // (google.protobuf.Empty);
+}
