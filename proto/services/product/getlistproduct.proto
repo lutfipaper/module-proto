@@ -3,7 +3,7 @@ syntax = "proto3";
 package product;
 
 // always use absolute path
-option go_package = "github.com/lutfipaper/module-proto/go/product;product";
+option go_package = "github.com/lutfipaper/module-proto/go/services/product;product";
 
 message GetListProductResponse { repeated Product ListProduct = 1; }
 
